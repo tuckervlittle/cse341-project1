@@ -1,0 +1,65 @@
+# Returns all contacts (Localhost)
+GET http://localhost:3000/contacts
+
+### # Returns all contacts (Render)
+GET https://cse341-project1-fmfy.onrender.com/contacts
+
+### # Returns contact with the specified ID (Localhost)
+GET http://localhost:3000/contacts/68bd05dc5d1780d7386cabb6
+
+### # Returns contact with the specified ID (Render)
+GET https://cse341-project1-fmfy.onrender.com/contacts/68bd060b5d1780d7386cabb8
+
+### # Creates a new contact (Localhost)
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Tucker",
+  "lastName": "Little",
+  "email": "little.tucker@lol.com",
+  "favoriteColor": "Red",
+  "birthday": "2000-10-25"
+}
+
+### # Creates a new contact (Render)
+POST https://cse341-project1-fmfy.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Tucker",
+  "lastName": "Little",
+  "email": "little.tucker@lol.com",
+  "favoriteColor": "Red",
+  "birthday": "2000-10-25"
+}
+
+### # Updates a contact with the specified ID (Localhost)
+PUT http://localhost:3000/contacts/68c458f8176c0ff71709b519
+Content-Type: application/json
+
+{
+  "firstName": "Tucker",
+  "lastName": "Little",
+  "email": "little.tucker@haha.com",
+  "favoriteColor": "blue",
+  "birthday": "2000-10-25"
+}
+
+### # Updates a contact with the specified ID (Render)
+PUT https://cse341-project1-fmfy.onrender.com/contacts/68c458f8176c0ff71709b519
+Content-Type: application/json
+
+{
+  "firstName": "Tucker",
+  "lastName": "Little",
+  "email": "little.tucker@haha.com",
+  "favoriteColor": "blue",
+  "birthday": "2000-10-25"
+}
+
+### # Deletes a contact with the specified ID (Localhost)
+DELETE http://localhost:3000/contacts/68c458f8176c0ff71709b519
+
+### # Deletes a contact with the specified ID (Render)
+DELETE https://cse341-project1-fmfy.onrender.com/contacts/68c458f8176c0ff71709b519
